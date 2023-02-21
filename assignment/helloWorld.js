@@ -1,3 +1,5 @@
+console.log('hello world');
+
 const img = document.getElementsByClassName('img')[0];
 const caption = document.getElementsByClassName('img-caption')[0];
 var storedSrc = null;
