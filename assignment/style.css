@@ -50,20 +50,20 @@ figure {
 /* Note:
     I did not figure the whole squaring a rectangular image thing out myself;
     I found it on Stackoverflow and it's still basically magic to me */
-.img {
+.img-container {
   position: relative;
 
   width: 100%;
   max-width: 40vh;
 }
 
-.img::after {
+.img-container::after {
   content: "";
   display: block;
   padding-bottom: 100%;
 }
 
-.img img {
+.img-container img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -76,6 +76,7 @@ figure {
 }
 
 .about {
+  /* Change the font-family of your list */
   font-family: 'Courier New', Courier, monospace;
 
   display: flex;
@@ -121,8 +122,3 @@ footer .quote .content {
 footer .quote .attribute {
   align-self: flex-end;
 }
-
-
-
-
-/* Change the font-family of your list */
