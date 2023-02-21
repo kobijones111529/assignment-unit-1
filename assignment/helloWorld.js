@@ -8,7 +8,7 @@ var storedCaption = null;
 img.onmouseover = function() {
   storedSrc = img.src;
   storedCaption = caption.textContent;
-  img.src = 'https://c.tenor.com/4gPD1ccxrVgAAAAC/tenor.gif';
+  img.src = 'secret_image.gif';
   caption.textContent = 'Jk';
 }
 
