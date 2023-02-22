@@ -13,7 +13,7 @@ img.onmouseover = () => {
   img.src = 'secret_image.gif';
   img.alt = 'Rick Astley GIF';
   caption.textContent = 'Jk';
-}
+};
 
 img.onmouseleave = () => {
   if (storedSrc !== null)
@@ -22,4 +22,4 @@ img.onmouseleave = () => {
     img.alt = storedAlt;
   if (storedCaption !== null)
     caption.textContent = storedCaption;
-}
+};
