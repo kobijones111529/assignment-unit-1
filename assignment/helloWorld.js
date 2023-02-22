@@ -6,7 +6,7 @@ var storedSrc = null;
 var storedAlt = null;
 var storedCaption = null;
 
-img.onmouseover = function() {
+img.onmouseover = () => {
   storedSrc = img.src;
   storedAlt = img.alt;
   storedCaption = caption.textContent;
@@ -15,7 +15,7 @@ img.onmouseover = function() {
   caption.textContent = 'Jk';
 }
 
-img.onmouseleave = function() {
+img.onmouseleave = () => {
   if (storedSrc !== null)
     img.src = storedSrc;
   if (storedAlt !== null)
