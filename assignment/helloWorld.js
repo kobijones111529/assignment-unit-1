@@ -16,10 +16,10 @@ img.onmouseover = () => {
 };
 
 img.onmouseleave = () => {
-  if (storedSrc !== null)
-    img.src = storedSrc;
-  if (storedAlt !== null)
-    img.alt = storedAlt;
-  if (storedCaption !== null)
-    caption.textContent = storedCaption;
+  img.src = storedSrc ?? img.src;
+  img.alt = storedAlt ?? img.alt;
+  caption.textContent = storedCaption ?? caption.textContent;
+  storedSrc = null;
+  storedAlt = null;
+  storedCaption = null;
 };
