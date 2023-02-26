@@ -2,9 +2,9 @@ console.log('hello world');
 
 const img = document.getElementsByClassName('img')[0];
 const caption = document.getElementsByClassName('img-caption')[0];
-var storedSrc = null;
-var storedAlt = null;
-var storedCaption = null;
+let storedSrc = null;
+let storedAlt = null;
+let storedCaption = null;
 
 img.onmouseover = () => {
   storedSrc = img.src;
